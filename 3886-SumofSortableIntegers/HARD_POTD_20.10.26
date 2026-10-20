@@ -1,3 +1,9 @@
+POTD 20.10 HARD
+
+
+
+
+
 You are given an integer array nums of length n.
 
 An integer k is called sortable if k divides n and you can sort nums in non-decreasing order by sequentially performing the following operations:
