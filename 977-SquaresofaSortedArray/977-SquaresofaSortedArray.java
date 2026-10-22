@@ -1,4 +1,4 @@
-// Last updated: 22/10/2026, 14:23:35
+// Last updated: 22/10/2026, 14:31:36
 1class Solution {
 2    public int[] sortedSquares(int[] nums) {
 3
@@ -16,29 +16,16 @@
 15
 16                sorted_numbers[k]= nums[slow]* nums[slow];
 17                slow++;
-18
-19
-20                
-21            }
-22
+18                }
+19            else {
+20                                sorted_numbers[k]= nums[fast]* nums[fast];
+21                                fast--;
+22                                }
 23
-24            else {
-25                                sorted_numbers[k]= nums[fast]* nums[fast];
-26                                fast--;
+24            k--;
+25        }
+26 return sorted_numbers;
 27
-28
-29
-30            }
-31
-32            k--;
-33        
-34
-35}
-36
-37
-38
-39    return sorted_numbers;
-40
-41        
-42    }
-43}
+28        
+29    }
+30}
